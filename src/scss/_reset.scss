@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background-color: Black;
+	color: white;
+	font-family: 'Outfit', sans-serif;
+}
+
+:root {
+	--outer-w: 49em;
+	--outer-h: 40em;
+	--medium-w: 32em;
+	--medium-h: 26em;
+	--inner-w: 16em;
+	--inner-h: 13em;
+}
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+}
+.flex{
+	display: flex;
+}
+figure{
+	img{
+		width: 100%;
+		object-fit: contain;
+	}
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+strong{
+	font-weight: 700;
+}
+
+section.cover{
+	text-align: center;
+	padding: 40px 20px 40px;
+	h2{
+		font-size: 72px;
+		font-weight: 500;
+		line-height: 96px; /* 133.333% */
+		letter-spacing: -1.8px;
+		margin-bottom: 21px;
+	}
+	p{
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 32px; /* 160% */
+	}
+}
+
+section.experiencia{
+	padding: 40px 80px;
+	.container{
+		justify-content: flex-start;
+	}
+	p{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px; /* 142.857% */
+		letter-spacing: 0.7px;
+		margin-right: 120px;
+		span{
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 72px; /* 120% */
+			letter-spacing: -1.5px;
+		}
+	}
+
+}
+
+section.definicion{
+	padding: 48px 20px;
+	.container{
+		flex-wrap: wrap
+	}
+	.item-row{
+		width: 100%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	h2{
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 72px; /* 120% */
+		letter-spacing: -1.5px;
+		width: 100%;
+		margin-bottom: 80px;
+	}
+	article{
+		width: 30%;
+		padding: 40px;
+		border: 1px solid var(--Primary-100, #E6D8CC);
+		margin-right: 32px;
+		&:last-child{
+			margin-right: 0;
+		}
+		h3{
+			font-family: Outfit;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 48px; /* 133.333% */
+			margin-bottom: 16px;
+		}
+		p{
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 32px; /* 177.778% */
+		}
+	}
+}
+
+section.tecnologias{
+	padding: 80px 20px;
+	h3{
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 32px; /* 133.333% */
+		opacity: 0.5;
+		transform: rotate(-90deg);
+	}
+	.container{
+		justify-content: space-between; 
+		align-items: center;
+		figure{
+			align-items: center;
+			p{
+				margin-left: 3px;
+			}
+		}
+	}
+
+}
+
+section.feature{
+	padding: 40px 20px;
+	background: radial-gradient(circle at center,#3600e4, Black);
+	.container{
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	.vue {
+		width: var(--outer-w);
+		height: var(--outer-h);
+		font-size: 6px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+		overflow: hidden;
+		margin-right: 80px;
+		
+	}
+	.item-content{
+		width: 50%;
+		h2{
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 72px; /* 120% */
+			letter-spacing: -1.5px;
+			margin-bottom: 40px;
+			font-family: Outfit;
+		}
+		ul{
+			flex-wrap: wrap;
+			li{
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 300;
+				line-height: 32px; /* 177.778% */
+				margin-bottom: 16px;
+				padding: 5px 10px;
+				border: 1px solid var(--Primary-100, #E6D8CC);
+				margin: 10px;
+			}
+		}
+	}
+}
+
+.bi-arrow{
+	vertical-align: middle;
+}
+
+  
+/* brand colors from https://brandcolors.net/b/vue-js */
+.vue .outer,
+.vue .medium,
+.vue .inner {
+	position: absolute;
+	border-style: solid;
+	border-color: transparent;
+	border-top-width: var(--h);
+	border-top-color: var(--c);
+	border-left-width: calc(var(--w) / 2);
+	border-right-width: calc(var(--w) / 2);
+	animation: in-and-out 3s linear infinite;
+}
+
+.vue .outer {
+	--h: var(--outer-h);
+	--w: var(--outer-w);
+	--c: #42b883; /* aragon green */
+}
+
+.vue .medium {
+	--h: var(--medium-h);
+	--w: var(--medium-w);
+	--c: #35495e; /* derk denim */
+	animation-delay: 0.1s;
+}
+
+.vue .inner {
+	--h: var(--inner-h);
+	--w: var(--inner-w);
+	--c: black;
+	animation-delay: 0.2s;
+}
+
+@keyframes in-and-out {
+	0%, 5% {
+		top: -100%;
+	}
+
+	15%, 80% {
+		top: 0;
+		filter: opacity(1);
+		transform: scale(1);
+	}
+
+	90%, 100% {
+		top: 100%;
+		filter: opacity(0);
+		transform: scale(0);
+	}
+}
+
+
+section.line-time {
+	min-height: 60vw;
+	font-family: 'Droid Sans', sans-serif;
+	position: relative;
+	padding: 40px 20px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		bottom: 0px;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: 4px;
+		background-color: #fff;
+	}
+}
+
+.line-time .entries {
+	width: calc(100% - 80px);
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+	left: -5px;
+}
+.line-time .entries .entry {
+	width: calc(50% - 80px);
+	float: left;
+	padding: 20px;
+	clear: both;
+	text-align: right;
+}
+.line-time .entries .entry:not(:first-child) {
+	margin-top: -60px;
+}
+.line-time .entries .entry .title {
+	font-size: 32px;
+	margin-bottom: 12px;
+	position: relative;
+	color: #fff;
+}
+.line-time .entries .entry .title:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 4px solid #ffffff;
+	background-color: #1D1D1D;
+	border-radius: 100%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: -73px;
+	z-index: 1000;
+}
+.line-time .entries .entry .title.big:before {
+	width: 24px;
+	height: 24px;
+	-webkit-transform: translate(8px, -50%);
+	transform: translate(8px, -50%);
+	border: 4px solid #3600e4;
+	background-color: black;
+}
+.line-time .entries .entry .body {
+	color: #aaa;
+}
+.line-time .entries .entry .body p {
+	line-height: 1.4em;
+}
+.line-time .entries .entry:nth-child(2n) {
+	text-align: left;
+	float: right;
+}
+.line-time .entries .entry:nth-child(2n) .title:before {
+	left: -63px;
+}
+.line-time .entries .entry:nth-child(2n) .title.big:before {
+	-webkit-transform: translate(-8px, -50%);
+	transform: translate(-8px, -50%);
+}
+  
+ 

@@ -1,0 +1,77 @@
+include block/metaData.pug
+
+		include block/header.pug
+		section.cover
+			.container
+				h2 Front end Developer
+				p Hola, soy Jairo, un apasionado desarrollador 
+					strong front end 
+					|con experiencia trabajando con #[br] diversas agencias y empresas de desarrollo web. Encuentro una gran satisfacción #[br] trabajando en el emocionante mundo del desarrollo web.
+		figure
+			img(src='images/hero-image.png', alt='front end developer')
+		section.tecnologias
+			.container.flex
+				h3 Technologías
+				figure.flex
+					img(src='images/html5.png', alt='html5' width='82' height='80')
+					p HTML & CSS
+				figure.flex
+					img(src='images/js.png', alt='css3' width='80' height='80')
+					p JavaScript
+				figure.flex
+					img(src='images/seo.png', alt='bootstrap' width='62' height='60')
+					p SEO
+				figure.flex
+					img(src='images/wordpress.png', alt='wordpress' width='67' height='67')
+					p Wordpress
+		section.feature
+			.container.flex
+				figure 
+					.vue
+						.outer
+						.medium
+						.inner
+				.item-content
+					h2 Conocimiento en el Ecosistema Vue.js
+					ul.flex
+						li Vue CLI
+						li Vue Router 
+						li Vueprime
+						li Pinia
+						li Composables
+						li Composition API
+						li Vuetify
+						li Nuxt
+						li fetch y axios 
+		include block/timeline.pug
+		section.experiencia
+			.container.flex
+				p 
+					span 12 
+					| AÑOS DE EXPERIENCIA
+				p 
+					span 120 
+					| PROYECTOS EN DIFERENTES SECTORES
+				p 
+					span 5 
+					| EMPRESAS
+		.container 
+			hr
+		section.definicion
+			.container.flex
+				h2 Desarrollo sitios web semánticos, #[br] eficientes y optimizados
+				.item-row.flex
+					article
+						h3 Semántico
+						p La implementación del HTML está diseñada pensando en el SEO, generando semántica mediante el uso de las etiquetas adecuadas, así como la correcta agrupación de los títulos y el uso de meta etiquetas,  asegurando una base técnica sólida para la búsqueda orgánica.
+
+					article
+						h3 Responsivo
+						p Los sitios están diseñados para adaptarse a diversos dispositivos y asegurar una compatibilidad adecuada entre navegadores (cross-browser). Se aplican buenas prácticas en el CSS y media queries para reutilizar código y evitar cargas adicionales.
+
+					article
+						h3 Optimización
+						p Realizo pruebas de rendimiento y auditorías para asegurar una implementación exitosa del proyecto. Utilizo herramientas que registran tiempos y velocidad.
+		
+		include block/footer.pug
+		script(src='js/main.js', type="text/javascript")

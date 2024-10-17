@@ -1,0 +1,23 @@
+header{
+    width: 100%;
+    padding: 30px 20px 30px;
+    .container{
+        justify-content: space-between;
+        h1{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 32px;}
+        button{
+            border-radius: 25px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #3600E4;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    }
+    
+}
