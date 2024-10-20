@@ -17,5 +17,12 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "sass": "^1.70.0",
     "typescript": "^5.3.3"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "indentation": 2,
+      "number-leading-zero": "always"
+    }
   }
 }
